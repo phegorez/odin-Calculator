@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+/* Remove Arrow on Input number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+/*  */
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.calculator {
+    border: 2px solid black;
+    padding: 1rem;
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: #EEF0F2;
+}
+
+.calculator .display {
+    border: 2px solid black;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+}
+
+.display input{
+    width: 100%;
+    border: none;
+    text-align: right;
+}
+.display input:focus {
+    outline: none;
+}
+.display p {
+    text-align: right;
+}
+
+.calculator .clearAndDel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.calculator .numberAndOperators {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.clearAndDel button,
+.numberAndOperators button {
+    padding: 1.3rem;
+    border: 2px black solid;
+    border-radius: .3rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.clearAndDel button:first-child {
+    background-color: #EEC643;
+}
+.clearAndDel button:last-child {
+    background-color: #141414;
+    color: white;
+}
