@@ -12,31 +12,31 @@
     <main class="container">
         <div class="calculator">
             <div class="display">
-                <p>Top Number</p>
-                <input type="number" id="calculatorScreen">
+                <p id="topNumber" class="topNumber"></p>
+                <input type="text" id="calculatorScreen">
             </div>
             <div class="buttons">
                 <div class="clearAndDel">
-                    <button id="clearBtn">Clear</button>
-                    <button id="delBtn">Delete</button>
+                    <button id="clearBtn" onclick="clearBtn()">Clear</button>
+                    <button id="delBtn" onclick="deleteInput()">Delete</button>
                 </div>
                 <div class="numberAndOperators">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>÷</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>x</button>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>-</button>
-                    <button>.</button>
-                    <button>0</button>
-                    <button>=</button>
-                    <button>+</button>
+                    <button onclick="inputNumpad('7')">7</button>
+                    <button onclick="inputNumpad('8')">8</button>
+                    <button onclick="inputNumpad('9')">9</button>
+                    <button onclick="inputNumpad('/')">÷</button>
+                    <button onclick="inputNumpad('4')">4</button>
+                    <button onclick="inputNumpad('5')">5</button>
+                    <button onclick="inputNumpad('6')">6</button>
+                    <button onclick="inputNumpad('*')">x</button>
+                    <button onclick="inputNumpad('1')">1</button>
+                    <button onclick="inputNumpad('2')">2</button>
+                    <button onclick="inputNumpad('3')">3</button>
+                    <button onclick="inputNumpad('-')">-</button>
+                    <button onclick="inputNumpad('.')">.</button>
+                    <button onclick="inputNumpad('0')">0</button>
+                    <button onclick="operate()">=</button>
+                    <button onclick="inputNumpad('+')">+</button>
                 </div>
             </div>
         </div>

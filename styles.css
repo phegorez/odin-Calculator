@@ -44,12 +44,14 @@ input[type=number]{
     width: 100%;
     border: none;
     text-align: right;
+    font-size: 1rem;
 }
 .display input:focus {
     outline: none;
 }
 .display p {
     text-align: right;
+    min-height: 20px;
 }
 
 .calculator .clearAndDel {
